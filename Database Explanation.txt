@@ -1,0 +1,24 @@
+The source data shows urinary markers found in samples taken from 590 patients with either a pancreatic cancer diagnosis or a more benign pancreatic condition. 
+
+The structure of the database is as follows:
+
+sample_id PK charvar
+patient_cohort charvar
+sample_origin charvar
+age int
+sex varchar
+diagnosis int
+stage varchar
+benign_sample_diagnosis varchar
+plasma_CA19_9 int
+creatinine int
+LYVE1 int
+REG1B int
+TFF1 int
+REG1A int
+
+The database will integrate with the machine learning model by creating additional datasets for the model through SQL querying. 
+The initial machine learning model will work on the entire dataset, but subsequent models can be created for certain diagnoses or subsets of the population.
+
+
+
