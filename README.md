@@ -10,3 +10,6 @@ Our roles have been selected and each team member will be responsible for their 
 
 ## Google Slides (draft)
 https://docs.google.com/presentation/d/1V8TzO3QotAER8gG7yoSA2JqWCj4eC4TSSbygPTdOyhM/edit?usp=sharing
+
+## Dashboard (overview)
+https://docs.google.com/presentation/d/1kNauOyb5hfkX2_CczbgCNyR4u84tCv-Y_2XvuZPimoE/edit#slide=id.p
