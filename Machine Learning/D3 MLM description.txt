@@ -1,0 +1,44 @@
+### Overview of Machine Learning Model
+
+After dropping unnecessary columns/data, SciKitLearn is the library we'll be using to create a classifier. Our data will be split into training and testing data sets. The training set will then be fit into a Logistic Regression classifier.
+
+### Description of preliminary data preprocessing
+
+Preprocessing for the data included dropping unnecessary columns (sample_id, patient_cohort, sample_origin, plasma_CA19_9, benign_sample_diagnosis), dropping null values from REG1B and REG1A, and checking the data types of the remaining columns. Object datatypes were then converted to int64 by use of OneHotEncoder. These new data type columns were then merged back into the original dataframe. 
+
+### Description of preliminary feature engineering and preliminary feature selection, including their decision-making process 
+
+The preliminary features we decided to use all of the markers that could be influential in a urinalysis for diagnosis. These features included age, diagnosis, creatine, LYVE1, TFF1, sex, stage, and either REG1A, REG1B, or plasma. 
+
+### Description of how data was split into training and testing sets 
+
+Training and testing sets were split up using the train test split module of the SKLearn Library.
+
+For the moment the default settings were left in place.
+
+### Explanation of model choice, including limitations and benefits 
+
+The model used was a supervised machine learning model since we knew that out target outcome was that we are trying to predict the diagnosis of pancreatic cancer in a patient based on urinalysis. 
+
+We used a logistic regression model to so the output would show yes, a patient has markers consistent with a pancreatic cancer diagnosis, vs. no, a patient does not have markers consistent with a pancreatic cancer diagnosis. 
+
+A limitation of the logistic regression model is that it does not allow us to differentiate the stage of cancer or if a patient has a benign disease that the urinalysis is picking up on since there are only two possible outcomes from the training model.
+
+The benefit to using the logistic regression model is that it is easy to interpret and train. Logistic regression is also a good tool to be used for classification purposes which is what we want from the model. 
+
+### Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables)
+
+There have been no changes in the model between Segment 2 and Segment 3. 
+
+### Description of how they have trained the model thus far, and any additional training that will take place
+
+The model was trained using a dataset from the study regarding urinalysis and pancreatic cancer. The model was run using the different biomarkers mentioned before (REG1A, REG1B, and plasma). The model would benefit in the future from continued training with more data from future studies. We reached out to the authors of the current study to see if there was additional data, however we did not receive a reply. 
+
+### Description of current accuracy score
+
+The current accuracy scores are as followed for the three models:
+REG1A = 1.0
+REG1B = 0.689
+Plasma = 0.98
+
+These accuracy scores show that using the REG1A biomarker in a urinalysis in addition to LYVE1 and TFF1 markers is the most accurate in its ability to detect early pancreatic cancer, followed by Plasma, and finally by REG1B. 
