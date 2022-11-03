@@ -28,17 +28,27 @@ The benefit to using the logistic regression model is that it is easy to interpr
 
 ### Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables)
 
-There have been no changes in the model between Segment 2 and Segment 3. 
+Updates to the model have included:
+- use of RandomForest classifier instead of using LogisticRegression.
+- using 2 diagnoses (No Cancer vs. Cancer)
+- using 3 diagnoses output (No Issue, Benign Disease, vs. Cancer)
+
+We found that the model was best at predicting cancer when all 3 diagnoses were used. 
 
 ### Description of how they have trained the model thus far, and any additional training that will take place
 
-The model was trained using a dataset from the study regarding urinalysis and pancreatic cancer. The model was run using the different biomarkers mentioned before (REG1A, REG1B, and plasma). The model would benefit in the future from continued training with more data from future studies. We reached out to the authors of the current study to see if there was additional data, however we did not receive a reply. 
+The model was trained using a dataset from the study regarding urinalysis and pancreatic cancer. The model was run using the different biomarkers mentioned before (REG1A, REG1B, and plasma). The model was trained changing the depth parameters of RandomForest, adjusting other parameters in the model (Sex, Stage, Creatine). The model would benefit in the future from continued training with more data from future studies. We reached out to the authors of the current study to see if there was additional data, however we did not receive a reply. 
 
 ### Description of current accuracy score
 
-The current accuracy scores are as followed for the three models:
-REG1A = 1.0
-REG1B = 0.689
-Plasma = 0.98
+The current accuracy scores are as followed for the three models with use of 3 diagnosis output:
+REG1A = 0.52
+REG1B = 0.53
+Plasma = 0.73
 
-These accuracy scores show that using the REG1A biomarker in a urinalysis in addition to LYVE1 and TFF1 markers is the most accurate in its ability to detect early pancreatic cancer, followed by Plasma, and finally by REG1B. 
+The current accuracy scores are as followed for the three models with use of 2 diagnosis output:
+REG1A = 0.63
+REG1B = 0.73
+Plasma = 0.89
+
+These accuracy scores show that Plasma is the most accurate in its ability to detect cancer at 0.73 (3 diagnosis output) and 0.89 (2 diagnosis output) and that REG1A ad REG1B had an accuracy of 0.5 with the 3 diagnosis output model and 0.63 and 0.73 with the 2 dignosis output model. This shows that the use of urinalysis may not be the best indicator for early diagnosis of malignant pancreatic disease.
