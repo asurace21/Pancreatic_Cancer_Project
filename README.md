@@ -12,7 +12,7 @@ The data set for this project came from Kaggle in the form of a csv file providi
 
 Data analysis was done in the form of a supervised machine learning model, using logistic regression to perform binary classification answering the question of whether a patient with certain levels of the markers does or does not have cancer. Preprocessing included removing columns irrelevant to the analysis, such as whether the patient sample was used in a previous study or the tissue bank the sample came from. While the logistic regression model is easy to train and interpret, which works for the purposes of saying whether a patient has cancer or not, it can only provide one of two answer choices, so a limitation is that it cannot be used to differentiate whether non-cancer patients are truly healthy or have a benign condition.
 
-## Google Slides (draft)
+## Google Slides
 https://docs.google.com/presentation/d/1V8TzO3QotAER8gG7yoSA2JqWCj4eC4TSSbygPTdOyhM/edit?usp=sharing
 
 ## Dashboard (overview)
