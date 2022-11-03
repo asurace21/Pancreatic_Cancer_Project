@@ -20,7 +20,7 @@ For the moment the default settings were left in place.
 
 The model used was a supervised machine learning model since we knew that out target outcome was that we are trying to predict the diagnosis of pancreatic cancer in a patient based on urinalysis. 
 
-We used a logistic regression model to so the output would show yes, a patient has markers consistent with a pancreatic cancer diagnosis, vs. no, a patient does not have markers consistent with a pancreatic cancer diagnosis. 
+We used RandomForest and ran four different models with 2 or 3 different outcomes for a total to so the output would show yes, a patient has markers consistent with a pancreatic cancer diagnosis, vs. no, a patient does not have markers consistent with a pancreatic cancer diagnosis. 
 
 A limitation of the logistic regression model is that it does not allow us to differentiate the stage of cancer or if a patient has a benign disease that the urinalysis is picking up on since there are only two possible outcomes from the training model.
 
