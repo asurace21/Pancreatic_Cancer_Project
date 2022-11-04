@@ -18,13 +18,13 @@ For the moment the default settings were left in place.
 
 ### Explanation of model choice, including limitations and benefits 
 
-The model used was a supervised machine learning model since we knew that out target outcome was that we are trying to predict the diagnosis of pancreatic cancer in a patient based on urinalysis. 
+The model used was a supervised machine learning model since we knew that our target outcome was to predict the diagnosis of pancreatic cancer in a patient based on urinalysis. 
 
-We used RandomForest and ran four different models with 2 or 3 different outcomes for a total to so the output would show yes, a patient has markers consistent with a pancreatic cancer diagnosis, vs. no, a patient does not have markers consistent with a pancreatic cancer diagnosis. 
+We used RandomForest and ran four different models with 2 or 3 different outcomes for a total of 8 different models. The output would show yes, a patient has markers consistent with a pancreatic cancer diagnosis, vs. no, a patient does not have markers consistent with a pancreatic cancer diagnosis in the models ran with 2 outcomes. The models with 3 outcomes would show 1. a patient is healthy and has no evidence of disease, 2. A patient has a benign pancreatic disease, 3. A patient has a malignant pancreatic disease (Pancreatic Cancer).
 
-A limitation of the logistic regression model is that it does not allow us to differentiate the stage of cancer or if a patient has a benign disease that the urinalysis is picking up on since there are only two possible outcomes from the training model.
+A limitation of the RandomForest model is that it can overfit the data and sometimes does not work well or get good results for small data sets because the randomness is reduced. 
 
-The benefit to using the logistic regression model is that it is easy to interpret and train. Logistic regression is also a good tool to be used for classification purposes which is what we want from the model. 
+The benefit to using the RandomForest model is that it can be used to solve both a classification and regression problem and that it automatically handles missing values. 
 
 ### Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables)
 
@@ -34,6 +34,8 @@ Updates to the model have included:
 - using 3 diagnoses output (No Issue, Benign Disease, vs. Cancer)
 
 We found that the model was best at predicting cancer when all 3 diagnoses were used. 
+
+Originally we used a Logistic Regression model for our machine learning model that had 2 outcomes (No cancer vs. cancer). We found that the Logistric Regression model did not perform well when we took away certain information that could influence the data such as stage and benign disease diagnosis. This led us to try the RandomForest Classifier which had better results. 
 
 ### Description of how they have trained the model thus far, and any additional training that will take place
 
