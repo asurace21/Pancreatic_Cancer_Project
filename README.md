@@ -59,8 +59,5 @@ These accuracy scores show that Plasma is the most accurate in its ability to de
 ## Google Slides
 https://docs.google.com/presentation/d/1V8TzO3QotAER8gG7yoSA2JqWCj4eC4TSSbygPTdOyhM/edit?usp=sharing
 
-## Dashboard (overview)
-https://docs.google.com/presentation/d/1kNauOyb5hfkX2_CczbgCNyR4u84tCv-Y_2XvuZPimoE/edit#slide=id.p
-
 ## Tableau Dashboard
 https://public.tableau.com/app/profile/ee1691/viz/PancreaticCancerDashboard/Dashboard1?publish=yes
