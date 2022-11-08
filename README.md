@@ -7,7 +7,9 @@ For this project we will be analyzing the urine test results of individuals who 
 ## Roles
 
 Github Maintenace, Google Slides - Andrew Surace
+
 Database, Dashboard - Erica Eidelman
+
 Machine Learning Model - Brittany Garrett
 
 ## Data Exploration
